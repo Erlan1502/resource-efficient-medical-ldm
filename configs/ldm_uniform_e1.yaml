@@ -1,0 +1,26 @@
+experiment: "E1"
+description: "Standard Latent Diffusion Model with uniform timestep sampling"
+
+vae:
+  checkpoint: "checkpoints/vae_f4/best_vae.pt"
+  latent_channels: 4
+  latent_size: 16
+
+model:
+  type: "latent_unet"
+  in_channels: 4
+  out_channels: 4
+  base_channels: 64
+  channel_mults: [1, 2, 4]
+
+diffusion:
+  timesteps: 1000
+  beta_schedule: "linear"
+  sampling_strategy: "uniform"
+
+training:
+  seed: 42
+  batch_size: 64
+  lr: 0.0001
+  total_steps: 40000
+  save_dir: "checkpoints/ldm_uniform_e1"

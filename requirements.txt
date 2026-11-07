@@ -1,0 +1,25 @@
+# Core Deep Learning
+torch>=2.0.0
+torchvision>=0.15.0
+diffusers>=0.26.0
+accelerate>=0.27.0
+
+# Scientific computing & Data
+numpy>=1.24.0
+scipy>=1.10.0
+medmnist>=3.0.0
+Pillow>=9.5.0
+
+# Metrics & Evaluation
+torchmetrics>=1.0.0
+scikit-learn>=1.2.0
+
+# Utilities & Config
+pyyaml>=6.0
+tqdm>=4.65.0
+matplotlib>=3.7.0
+
+# Jupyter & Analysis
+jupyter>=1.0.0
+ipykernel>=6.20.0
+

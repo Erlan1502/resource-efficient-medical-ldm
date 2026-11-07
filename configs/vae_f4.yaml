@@ -17,3 +17,4 @@ training:
   kl_weight: 0.00001
   epochs: 50
   save_dir: "checkpoints/vae_f4"
+

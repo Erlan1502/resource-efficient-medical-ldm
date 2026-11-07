@@ -27,3 +27,4 @@ training:
   lr: 0.0001
   total_steps: 40000
   save_dir: "checkpoints/ldm_cbats_e3"
+
